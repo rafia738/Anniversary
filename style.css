@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 735px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0b1522;
+
+}
+
+h1 {
+    background-color: #f20044;
+    bottom: 100px;
+}
+
+h1:hover {
+    box-shadow: 6px 12px 10px white;
+}
+
+.card-containers {
+    display: flex;
+    padding: 20px 0px;
+    justify-content: center;
+    align-items: left;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card {
+    width: 300px;
+    margin: 10px;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 6px coral;
+    display: flex;
+}
+
+.card-two {
+    width: 280px;
+    margin: 10px;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 6px rgb(253, 69, 8);
+    display: flex;
+}
+
+.card-three {
+    width: 280px;
+    margin: 10px;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 6px rgb(253, 69, 8);
+    display: flex;
+}
+
+/* .card-body{
+    padding:0 5px;
+} */
+.img-style {
+    width: 200px;
+    height: 270px;
+}
+
+.imge-style {
+    width: 200px;
+    height: 270px;
+}
+
+.imges-style {
+    width: 200px;
+    height: 270px;
+}
+
+.card-body .card-title {
+    font-size: 1rem;
+    font-family: sans-serif;
+    text-align: center;
+    color: rgb(250, 9, 9);
+    margin-top: 5px;
+}
+
+.card:hover {
+    box-shadow: 6px 12px 10px white;
+}
+
+.card-two:hover {
+    box-shadow: 6px 12px 10px white;
+}
+
+.card-three:hover {
+    box-shadow: 6px 12px 10px white;
+}
+
+
+
+.heart {
+    width: 70px;
+    height: 70px;
+    background-color: #f20044;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 90px #f20044;
+    animation: heart 0.6s linear infinite;
+    flex-wrap: wrap;
+}
+
+@keyframes heart {
+    0% {
+        transform: rotate(-45deg) scale(1.07);
+    }
+
+    80% {
+        transform: rotate(-45deg) scale(1.0);
+    }
+
+    100% {
+        transform: rotate(-45deg) scale(0.08);
+    }
+}
+
+.heart::before {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: #f20044;
+    top: -50%;
+    border-radius: 50px;
+    box-shadow: -10px 10px 90px #f20044;
+}
+
+.heart::after {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: #f20044;
+    right: -50%;
+    border-radius: 50px;
+    box-shadow: -10px 10px 90px #f20044;
+}
