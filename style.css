@@ -1,17 +1,23 @@
 body {
     margin: 0;
     padding: 0;
-    min-height: 735px;
+    min-height:100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items:center;
+    justify-content:space-evenly;
     background: #0b1522;
+    width: auto;
+    flex-wrap: wrap;
 
 }
 
 h1 {
     background-color: #f20044;
-    bottom: 100px;
+    height: 100%;
+    
+    
+    
+
 }
 
 h1:hover {
@@ -24,7 +30,8 @@ h1:hover {
     justify-content: center;
     align-items: left;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction:row;
+    flex-basis: 1;
 }
 
 .card {
@@ -72,7 +79,7 @@ h1:hover {
 .card-body .card-title {
     font-size: 1rem;
     font-family: sans-serif;
-    text-align: center;
+    text-align:start;
     color: rgb(250, 9, 9);
     margin-top: 5px;
 }
